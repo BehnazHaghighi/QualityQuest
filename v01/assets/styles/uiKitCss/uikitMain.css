@@ -1,0 +1,22 @@
+.defaultBtn{
+    width: 103px;
+    height: 44px;
+}
+.roundBtn{
+
+    width: 118px;
+    height: 44px;
+    border-radius: 30px;
+}
+.icon{
+
+    width: 138px;
+    height: 44px;
+    border-radius: 30px;
+}
+.heart{
+    width: 14px;
+    height: 14px;
+}
+
+	

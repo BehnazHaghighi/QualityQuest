@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="../../assets/styles/dashboardCss/bootstrap.min.css">
+
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="../../assets/font/css/all.min.css">
+
+    <!-- external link -->
+    <link rel="stylesheet" href="../../assets/styles/dashboardCss/main.css">
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Side Menu -->
+            <nav class="vertical-menu col-md-3 col-lg-2 sidebar ">
+                <!-- logo -->
+                <div class="d-flex flex-row align-items-center mb-4 mt-4 ">
+                    <img src="../../assets/images/authentication/logo.png" alt="logo" class="img-fluid">
+                    <span class="ms-1 fs-4 ">Hope Ui</span>
+                </div>
+                <!-- end logo -->
+
+                <!-- Menu Items -->
+                <div class="list-group mb-2">
+
+                    <span class="fs-5 ">Home</span>
+                    <div>
+                        <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+                        <a href="#" class="list-group-item list-group-item-action">Menu Style</a>
+                    </div>
+
+                    <span class="fs-5 ">Pages</span>
+                    <div>
+                        <a href="#" class="list-group-item list-group-item-action">Example</a>
+                        <a href="#" class="list-group-item list-group-item-action">Widgets</a>
+
+                        <a href="#MapsSubmenu" class="list-group-item list-group-item-action"
+                            data-bs-toggle="collapse">Maps</a>
+                        <div id="MapsSubmenu" class="collapse">
+                            <a href="#" class="list-group-item list-group-item-action">Google</a>
+                            <a href="#" class="list-group-item list-group-item-action">Vector</a>
+                        </div>
+
+                        <a href="#AuthenticationSubmenu" class="list-group-item list-group-item-action"
+                            data-bs-toggle="collapse">Authentication</a>
+
+                        <div id="AuthenticationSubmenu" class="collapse">
+                            <a href="#UsersSubmenu" class="list-group-item list-group-item-action"
+                                data-bs-toggle="collapse">Users</a>
+                        </div>
+                        <div id="UsersSubmenu" class="collapse">
+                            <a href="#" class="list-group-item list-group-item-action">User Profile</a>
+                            <a href="#" class="list-group-item list-group-item-action">Edit User</a>
+                            <a href="#" class="list-group-item list-group-item-action">User List</a>
+                        </div>
+
+                        <a href="#UtilitiesSubmenu" class="list-group-item list-group-item-action"
+                            data-bs-toggle="collapse">Utilities</a>
+                        <div id="UtilitiesSubmenu" class="collapse">
+                            <a href="#" class="list-group-item list-group-item-action">Error 404</a>
+                            <a href="#" class="list-group-item list-group-item-action">Error 505</a>
+                            <a href="#" class="list-group-item list-group-item-action">Maintence</a>
+                        </div>
+                    </div>
+
+
+
+                    <span class="fs-5 ">Elements</span>
+                    <div>
+                        <a href="#" class="list-group-item list-group-item-action">Components</a>
+                        <a href="#" class="list-group-item list-group-item-action">Form</a>
+                        <a href="#" class="list-group-item list-group-item-action">Table</a>
+                        <a href="#" class="list-group-item list-group-item-action">Icons</a>
+                    </div>
+                </div>
+                <!-- End Menu Items -->
+            </nav>
+            <!-- End Side Menu -->
+
+            <!-- Main Content -->
+            <main class=" col-12 col-md-9 col-lg-10 p-0 ">
+
+                <!-- header -->
+                <header class="col-lg-6 w-100 p-2">
+                    <form class="search-box">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </form>
+                </header>
+                <!-- end header -->
+
+                <!-- headet text -->
+                <div class="bgHeader">
+                    <div class="text-white p-4">
+                        <h1 class="fw-bold">Hello Devs !</h1>
+                        <span class="opacity-50 text-white">We are on a mission to help like you beautiful projects for
+                            free</span>
+                    </div>
+                </div>
+                <!-- headet text -->
+
+                <!-- biling -->
+                <div class="col-lg-8  w-100 p-3">
+                    <h1>Billing Information</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum sit accusantium sunt facere
+                        aliquam, laudantium cumque? Ex porro tempore molestiae dolorem quos error cumque quas magnam
+                        fugit, a quam minima!</p>
+                    <div class="col-lg-8">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Product 1</td>
+                                    <td>2</td>
+                                    <td>$50.00</td>
+                                    <td>$100.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Product 2</td>
+                                    <td>1</td>
+                                    <td>$80.00</td>
+                                    <td>$80.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Product 3</td>
+                                    <td>1</td>
+                                    <td>$800.00</td>
+                                    <td>$800.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Product 4</td>
+                                    <td>1</td>
+                                    <td>$100.00</td>
+                                    <td>$100.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Product 5</td>
+                                    <td>1</td>
+                                    <td>$100.00</td>
+                                    <td>$100.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Product 6</td>
+                                    <td>1</td>
+                                    <td>$100.00</td>
+                                    <td>$100.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Product 7</td>
+                                    <td>1</td>
+                                    <td>$100.00</td>
+                                    <td>$100.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Product 8</td>
+                                    <td>1</td>
+                                    <td>$100.00</td>
+                                    <td>$100.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="text-end fw-bold">Grand Total</td>
+                                    <td>$2.180.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <button class="btn btn-primary me-3" onclick="window.print()">Print</button>
+                        <button class="btn btn-secondary">Back to Dashboard</button>
+                    </div>
+                </div>
+                <!--end  biling -->
+
+                <!-- Footer -->
+                <footer class="p-2 w-100">
+                    <p>&copy; [2024] [Behnaz Haghighi]. All rights reserved.</p>
+                </footer>
+                <!-- Footer -->
+
+            </main>
+            <!-- END Main Content -->
+        </div>
+    </div>
+
+    <!-- jquery script -->
+    <script src="../../assets/js/jquery-v3.7.1.js"></script>
+    <!-- bootstrap script -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+/* Variables */
+:root {
+    --transition: all 300ms linear;
+    --colorborder: #3A57E8;
+    --hovermenu: #3572EF;
+    --backgroundHeader: #050C9C;
+    --backgroundTimeline: #e9ecef;
+    --backgroundTimelinePanel: #f8f9fa;
+    --colorfooter: #6c757d;
+    --transitionPricing: transform 0.3s;
+    --list-style: none;
+}
+
+/* Basic reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/******* Global styles *******/
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Error page  */
+.fontErr {
+    font-size: 400px;
+}
+
+.bgErr {
+    background-image: url(../../images/authentication/lock\ screen.jpg);
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.timer {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*End error page  */
+
+/* vectorMap page */
+.sidebar {
+    min-height: 100vh;
+}
+
+.vertical-menu .list-group-item {
+    text-align: center;
+}
+
+.vertical-menu .list-group-item:hover {
+    background-color: var(--hovermenu);
+
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        min-height: auto;
+    }
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+.bgHeader {
+    background-color: var(--backgroundHeader);
+}
+
+.search-box {
+    max-width: 300px;
+}
+
+/* end vectorMap page */
+
+/* spacialPages */
+.kanban {
+    gap: 10px;
+}
+
+.column {
+    /* flex : 1; */
+    background-color: var(--backgroundTimelinePanel);
+    min-width: 300px;
+    height: max-content;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-description {
+    color: var(--colorfooter);
+}
+
+.card-footer {
+    font-size: 12px;
+    color: var(--colorfooter);
+}
+
+.pricing-card {
+    transition: var(--transitionPricing);
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-features {
+    list-style: var(--list-style);
+}
+
+.pricing-features li {
+    margin: 10px 0;
+}
+
+/* timeline */
+ .timeline {
+    position: relative;
+    list-style: var(--list-style);
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background:var(--backgroundTimeline);
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.timeline-item .timeline-panel {
+    position: relative;
+    width: 46%;
+    padding: 20px;
+    border-radius: 4px;
+    background:var(--backgroundTimelinePanel);
+    border: 1px solid #e9ecef;
+}
+
+.timeline-item .timeline-panel:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -15px;
+    border-top: 15px solid transparent;
+    border-left: 15px solid var(--backgroundTimelinePanel);
+    border-bottom: 15px solid transparent;
+    display: block;
+    width: 0;
+}
+
+.timeline-item .timeline-image {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    background: #6c757d;
+    border-radius: 50%;
+    border: 2px solid #e9ecef;
+}
+
+.timeline-item .timeline-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.timeline-item.left .timeline-panel {
+    float: left;
+}
+
+.timeline-item.left .timeline-panel:before {
+    left: -15px;
+    right: auto;
+    border-left-width: 0;
+    border-right: 15px solid var(--backgroundTimelinePanel);
+}
+
+.timeline-item.right .timeline-panel {
+    float: right;
+}
+
+.timeline-item.right .timeline-panel:before {
+    left: auto;
+    right: -15px;
+}
+
+@media (max-width: 767px) {
+    .timeline:before {
+        left: 0;
+    }
+
+    .timeline-item .timeline-panel {
+        width: calc(100% - 60px);
+        float: none !important;
+        margin-left: 60px;
+    }
+
+    .timeline-item.left .timeline-panel:before,
+    .timeline-item.right .timeline-panel:before {
+        left: -15px;
+        border-left-width: 0;
+        border-right: 15px solid var(--backgroundTimelinePanel);
+    }
+
+    .timeline-item .timeline-image {
+        left: 0;
+        margin-left: 0;
+    }
+} 
+
+/* end spacialPages */

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="../../assets/styles/dashboardCss/bootstrap.min.css">
+
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="../../assets/font/css/all.min.css">
+
+    <!-- external link -->
+    <link rel="stylesheet" href="../../assets/styles/dashboardCss/main.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <main class="login" id="login">
+            <div class="row">
+                <div class="col-md-6  d-flex flex-column justify-content-center align-items-center">
+                    <div class="row">
+                        <div class="col-10 offset-1 m-5 ">
+                            <!-- logo -->
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <img src="../../assets/images/authentication/logo.png" alt="logo" class="img-fluid">
+                                <span class="ms-1 fs-4">Hope Ui</span>
+                            </div>
+                            <!-- end logo -->
+
+                            <!-- header login -->
+                            <div class="text-center mb-4">
+                                <h1 class="fw-bolder">Sign In</h1>
+                                <span class="opacity-50">Sign in to stay connected.</span>
+                            </div>
+                            <!-- header login -->
+
+                            <!-- form login -->
+                            <form action="" class="mb-4 container">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <label for="Email" class="opacity-50 d-block mb-1">Email</label>
+                                        <input type="text" id="Email" name="Email"
+                                            class="form-control w-100 form-control  is-invalid" required>
+                                        <div class="valid-feedback">test behnaz validation</div>
+
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="Password" class="opacity-50 d-block mb-1">Password</label>
+                                        <input type="password" id="Password" name="Password" class="form-control w-100">
+
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center mb-3">
+                                        <input type="checkbox" id="rememberMe" name="rememberMe" value="rememberMe"
+                                            class="me-2">
+                                        <label for="rememberMe" class="opacity-50">Remember me?</label>
+                                        <a href="#" class="ms-auto text-decoration-none">Forget Password</a>
+                                    </div>
+                                    <div class="col-12 mb-3 text-center">
+                                        <button type="submit" class="btn btn-primary w-50">Sign In</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- end form login -->
+
+                            <!-- sosial login -->
+                            <div class="text-center mb-3">
+                                <span class="opacity-50">or sign in with other accounts?</span>
+                                <div class="d-flex justify-content-center">
+                                    <a href="https://www.google.com/" class="text-decoration-none me-2 fs-4"><i
+                                            class="fa-brands fa-google"></i></a>
+                                    <a href="https://www.facebook.com/" class="text-decoration-none me-2 fs-4"><i
+                                            class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/" class="text-decoration-none me-2 fs-4"><i
+                                            class="fa-brands fa-square-instagram"></i></a>
+                                    <a href="https://www.linkedin.com" class="text-decoration-none me-2 fs-4"><i
+                                            class="fa-brands fa-linkedin"></i></a>
+                                </div>
+
+                                <div class="text-center">
+                                    <span class="opacity-50">Don’t have an account?<a href="register.html"
+                                            class="text-decoration-none">Click here to sign up</a></span>
+                                </div>
+                            </div>
+                            <!-- end sosial login -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- picture form confirm -->
+                <div class="col-md-6 d-none d-md-block p-0 ">
+                    <img src="../../assets/images/authentication/login.jpg" alt="login" title="login Page"
+                        class="img-fluid h-100">
+                </div>
+                <!-- picture form confirm -->
+            </div>
+        </main>
+    </div>
+
+    <!-- jquery script -->
+    <script src="../../assets/js/jquery-v3.7.1.js"></script>
+    <!-- bootstrap script -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- validation script -->
+    <script src="../../assets/js/validation.js"></script>
+
+</body>
+
+</html>
