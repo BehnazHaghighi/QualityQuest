@@ -9,12 +9,11 @@
     <!-- bootstrap link -->
     <link rel="stylesheet" href="../../assets/styles/dashboardCss/bootstrap.min.css">
 
-    <!-- Font Awesome link -->
-    <link rel="stylesheet" href="../../../assets/font/css/all.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- external link -->
     <link rel="stylesheet" href="../../assets/styles/dashboardCss/main.css">
-
 
 </head>
 
@@ -115,32 +114,122 @@
 
                 <!-- Kanban -->
                 <div class="container mt-4">
-                    <h1 class="mb-2">Kanban</h1>
+                    <div class="row g-3 mb-3 ">
+                        <!-- Filter Section -->
+                        <div class="col-12 col-md-6">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Filter by task name..." aria-label="Filter">
+                                <button class="btn btn-outline-primary" type="submit">
+                                    <i class="fa fa-filter" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- Sort and Group Section -->
+                        <div class="col-12 col-md-6 d-flex flex-wrap justify-content-md-end align-items-center">
+                            <div class="me-3">
+                                <span>Sort By :</span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="me-3">
+                                <span>Group By : Status</span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-share-alt me-2" aria-hidden="true"></i>
+                                <span class="me-1">Share</span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add New Task Form -->
+                    <form id="newTaskForm" class="mb-4">
+                        <div class="mb-3">
+                            <label for="taskTitle" class="form-label">Task Title</label>
+                            <input type="text" class="form-control" id="taskTitle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="taskDescription" class="form-label">Task Description</label>
+                            <textarea class="form-control" id="taskDescription" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="taskColumn" class="form-label">Select Column</label>
+                            <select class="form-select" id="taskColumn" required>
+                                <option value="todo">To Do</option>
+                                <option value="inProgress">In Progress</option>
+                                <option value="done">Done</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Task</button>
+                    </form>
+
+                    <!-- End Add New Task Form -->
+
                     <div class="row kanban">
                         <div class="col-12 col-md-3 col-lg-3 rounded-4 p-2 column">
                             <h3 class="mb-4">To Do</h3>
                             <div class="card rounded-4 mb-2 p-2">
-                                <div class="mb-1 fs-4">Task 1</div>
-                                <div class="card-description fs-6">Description of Task 1</div>
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <span class="opacity-50 mb-2">Dashboard plan > List</span>
+                                    <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="card-description fs-6">Notification Module Setting</div>
                                 <div class="card-footer d-flex justify-content-between align-items-center">
                                     <span>Assigned to: John</span>
                                     <span><i class="fas fa-calendar-alt me-1"></i> Due: 2024-06-30</span>
                                 </div>
+                                <div class="opacity-50 ms-2 mt-2">
+                                    <span><i class="fa fa-flag" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </span>
+                                    <span><i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </span>
+                                    <span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
                             </div>
                             <div class="card rounded-4 mb-2 p-2">
-                                <div class="mb-1 fs-4">Task 2</div>
-                                <div class="card-description fs-6">Description of Task 2</div>
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <span class="opacity-50 mb-2">Dashboard plan > List</span>
+                                    <span><i class="fa fa-ellipsis-v opacity-75" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+
+                                <div class="card-description fs-6">Admin Panel Customization</div>
                                 <div class="card-footer d-flex justify-content-between align-items-center">
                                     <span>Assigned to: Jane</span>
                                     <span><i class="fas fa-calendar-alt me-1"></i> Due: 2024-07-15</span>
                                 </div>
+                                <div class="opacity-50 ms-2 mt-2">
+                                    <span><i class="fa fa-flag" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </span>
+                                    <span><i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </span>
+                                    <span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
                             </div>
                             <div class="card rounded-4 mb-2 p-2">
-                                <div class="mb-1 fs-4">Task 3</div>
-                                <div class="card-description fs-6">Description of Task 3</div>
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <span class="opacity-50 mb-2">Dashboard plan > List</span>
+                                    <span><i class="fa fa-ellipsis-v opacity-75" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="card-description fs-6">General Improvement in Landing pages</div>
                                 <div class="card-footer d-flex justify-content-between align-items-center">
                                     <span>Assigned to: Fred</span>
                                     <span><i class="fas fa-calendar-alt me-1"></i> Due: 2024-07-15</span>
+                                </div>
+                                <div class="opacity-50 ms-2 mt-2">
+                                    <span><i class="fa fa-flag" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </span>
+                                    <span><i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </span>
+                                    <span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -148,11 +237,24 @@
                         <div class="col-12 col-md-3 col-lg-3 rounded-4 p-2 column">
                             <h3 class="mb-4">In Progress</h3>
                             <div class="card rounded-4 mb-2 p-2">
-                                <div class="mb-1 fs-4">Task 5</div>
-                                <div class="card-description fs-6">Description of Task 5</div>
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <span class="opacity-50 mb-2">Dashboard plan > List</span>
+                                    <span><i class="fa fa-ellipsis-v opacity-75" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="card-description fs-6">Sidebar in Dashboard Themes</div>
                                 <div class="card-footer d-flex justify-content-between align-items-center">
                                     <span>Assigned to: Nazi</span>
                                     <span><i class="fas fa-calendar-alt me-1"></i> Due: 2024-08-15</span>
+                                </div>
+                                <div class="opacity-50 ms-2 mt-2">
+                                    <span><i class="fa fa-flag" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </span>
+                                    <span><i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </span>
+                                    <span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -160,22 +262,27 @@
                         <div class="col-12 col-md-3 col-lg-3 rounded-4 p-2 column">
                             <h3 class="mb-4">Done</h3>
                             <div class="card rounded-4 mb-2 p-2">
-                                <div class="mb-1 fs-4">Task 4</div>
-                                <div class="card-description fs-6">Description of Task 4</div>
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <span class="opacity-50 mb-2">Dashboard plan > List</span>
+                                    <span><i class="fa fa-ellipsis-v opacity-75" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="card-description fs-6">Login screen update in mobile app</div>
                                 <div class="card-footer d-flex justify-content-between align-items-center">
                                     <span>Assigned to: Sara</span>
                                     <span><i class="fas fa-calendar-alt me-1"></i> Due: 2024-07-15</span>
                                 </div>
-                            </div>
-                            <div class="card rounded-4 mb-2 p-2">
-                                <div class="mb-1 fs-4">Task 6</div>
-                                <div class="card-description fs-6">Description of Task 6</div>
-                                <div class="card-footer```html
-                                d-flex justify-content-between align-items-center">
-                                    <span>Assigned to: Leo </span>
-                                    <span><i class="fas fa-calendar-alt me-1"></i> Due: 2024-02-15</span>
+                                <div class="opacity-50 ms-2 mt-2">
+                                    <span><i class="fa fa-flag" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </span>
+                                    <span><i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </span>
+                                    <span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                                    </span>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -196,7 +303,6 @@
     <script src="../../../assets/js/jquery-v3.7.1.js"></script>
     <!-- bootstrap script -->
     <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>
