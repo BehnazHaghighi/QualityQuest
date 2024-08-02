@@ -124,6 +124,12 @@ body {
     }
 }
 
+@media (min-width: 991.98px) {
+    .sidebar {
+        display: block;
+    }
+}
+
 .imgsize {
     width: 15px;
     height: 15px;
