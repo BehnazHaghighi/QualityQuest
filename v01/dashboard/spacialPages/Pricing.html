@@ -20,67 +20,109 @@
 
     <div class="container-fluid">
         <div class="row">
-
+            <!-- Hamburger Menu Button -->
+            <div class="d-lg-none p-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                    aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5.5 0 0 1 0 1h-11zm0-4a.5.5.5 0 0 1 0-1h11a.5.5.5 0 0 1 0 1h-11z" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
             <!-- Side Menu -->
-            <nav class="vertical-menu col-md-3 col-lg-2 sidebar ">
+            <nav id="sidebarMenu" class="vertical-menu col-md-3 col-lg-2 sidebar">
+                <!-- Close Button -->
+                <div class="d-lg-none p-3 text-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                        aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-x" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
                 <!-- logo -->
-                <div class="d-flex flex-row align-items-center mb-4 mt-4 ">
+                <div class="d-flex flex-row align-items-center mb-4 mt-2 border-bottom p-2">
                     <img src="../../assets/images/authentication/logo.png" alt="logo" class="img-fluid">
                     <span class="ms-1 fs-4 ">Hope Ui</span>
                 </div>
                 <!-- end logo -->
 
                 <!-- Menu Items -->
-                <div class="list-group mb-2">
-
-                    <span class="fs-5 ">Home</span>
-                    <div>
-                        <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
-                        <a href="#" class="list-group-item list-group-item-action">Menu Style</a>
+                <div class="list-group">
+                    <span class="fs-6 opacity-50 fw-bold">Home</span>
+                    <div class="border-bottom">
+                        <a href="#" class="list-group-item list-group-item-action opacity-50  border-0"><i
+                                class="fa-solid fa-gauge m-2"></i>Dashboard</a>
+                        <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                class="fa-solid fa-bars m-2"></i>Menu Style</a>
                     </div>
 
-                    <span class="fs-5 ">Pages</span>
-                    <div>
-                        <a href="#" class="list-group-item list-group-item-action">Example</a>
-                        <a href="#" class="list-group-item list-group-item-action">Widgets</a>
+                    <span class="fs-6 opacity-50 fw-bold mt-2">Pages</span>
+                    <div class="border-bottom">
+                        <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                class="fa-solid fa-tv m-2"></i>Example</a>
+                        <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                class="fa-solid fa-toolbox m-2"></i>Widgets</a>
 
-                        <a href="#MapsSubmenu" class="list-group-item list-group-item-action"
-                            data-bs-toggle="collapse">Maps</a>
+                        <a href="#MapsSubmenu"
+                            class="list-group-item list-group-item-action opacity-50 border-0 dropdown-toggle collapsed"
+                            data-bs-toggle="collapse"><i class="fa-solid fa-map-pin m-2"></i>Maps</a>
                         <div id="MapsSubmenu" class="collapse">
-                            <a href="#" class="list-group-item list-group-item-action">Google</a>
-                            <a href="#" class="list-group-item list-group-item-action">Vector</a>
+                            <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                    class="fa-solid fa-circle m-2 sizeicon"></i>Google</a>
+                            <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                    class="fa-solid fa-circle m-2 sizeicon"></i>Vector</a>
                         </div>
 
-                        <a href="#AuthenticationSubmenu" class="list-group-item list-group-item-action"
-                            data-bs-toggle="collapse">Authentication</a>
-
+                        <a href="#AuthenticationSubmenu"
+                            class="list-group-item list-group-item-action opacity-50 border-0 dropdown-toggle collapsed"
+                            data-bs-toggle="collapse"><i class="fa-solid fa-check m-1"></i>Authentication</a>
                         <div id="AuthenticationSubmenu" class="collapse">
-                            <a href="#UsersSubmenu" class="list-group-item list-group-item-action"
-                                data-bs-toggle="collapse">Users</a>
-                        </div>
-                        <div id="UsersSubmenu" class="collapse">
-                            <a href="#" class="list-group-item list-group-item-action">User Profile</a>
-                            <a href="#" class="list-group-item list-group-item-action">Edit User</a>
-                            <a href="#" class="list-group-item list-group-item-action">User List</a>
+                            <a href="#UsersSubmenu"
+                                class="list-group-item list-group-item-action opacity-50 border-0 dropdown-toggle collapsed"
+                                data-bs-toggle="collapse"><i class="fa-solid fa-user-tie m-2"></i>Users</a>
+                            <div id="UsersSubmenu" class="collapse">
+                                <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                        class="fa-solid fa-circle m-2 sizeicon"></i>User Profile</a>
+                                <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                        class="fa-solid fa-circle m-2 sizeicon"></i>Edit User</a>
+                                <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                        class="fa-solid fa-circle m-2 sizeicon"></i>User List</a>
+                            </div>
                         </div>
 
-                        <a href="#UtilitiesSubmenu" class="list-group-item list-group-item-action"
-                            data-bs-toggle="collapse">Utilities</a>
+                        <a href="#UtilitiesSubmenu"
+                            class="list-group-item list-group-item-action opacity-50 border-0 dropdown-toggle collapsed"
+                            data-bs-toggle="collapse"><i class="fa-solid fa-tree m-2"></i>Utilities</a>
                         <div id="UtilitiesSubmenu" class="collapse">
-                            <a href="#" class="list-group-item list-group-item-action">Error 404</a>
-                            <a href="#" class="list-group-item list-group-item-action">Error 505</a>
-                            <a href="#" class="list-group-item list-group-item-action">Maintence</a>
+                            <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                    class="fa-solid fa-circle-exclamation m-2 sizeicon"></i>Error 404</a>
+                            <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                    class="fa-solid fa-circle-exclamation m-2 sizeicon"></i>Error 505</a>
+                            <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                    class="fa-brands fa-slack m-2"></i>Maintenance</a>
                         </div>
                     </div>
 
-
-
-                    <span class="fs-5 ">Elements</span>
-                    <div>
-                        <a href="#" class="list-group-item list-group-item-action">Components</a>
-                        <a href="#" class="list-group-item list-group-item-action">Form</a>
-                        <a href="#" class="list-group-item list-group-item-action">Table</a>
-                        <a href="#" class="list-group-item list-group-item-action">Icons</a>
+                    <span class="fs-6 opacity-50 fw-bold mt-2">Elements</span>
+                    <div class="border-bottom">
+                        <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                class="fa-solid fa-moon m-2"></i>Components</a>
+                        <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                class="fa-solid fa-file m-2"></i>Form</a>
+                        <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                class="fa-solid fa-table m-2"></i>Table</a>
+                        <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
+                                class="fa-solid fa-i m-2"></i>Icons</a>
                     </div>
                 </div>
                 <!-- End Menu Items -->
@@ -88,17 +130,44 @@
             <!-- End Side Menu -->
 
             <!-- Main Content -->
-            <main class=" col-12 col-md-9 col-lg-10 p-0 ">
+            <main class=" col-12 col-md-12 col-lg-10 p-0 ">
 
                 <!-- header -->
-                <header class="col-lg-6 w-100 p-2">
-                    <form class="search-box">
+                <div class="col-lg-6 d-flex justify-content-between  w-100 p-2">
+
+                    <form class="search-box mt-2">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <button type="submit" class="btn btn-primary">Search</button>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search..." aria-label="Search"
+                                    aria-describedby="search-icon">
+                                <span class="input-group-text" id="search-icon"><i class="fas fa-search"></i></span>
+                            </div>
                         </div>
                     </form>
-                </header>
+                    <div class="d-flex justify-content-center flex-wrap align-items-center ">
+                        <div class="d-flex justify-content-center flex-wrap align-items-center  me-2">
+                            <div class="me-3">
+                                <img src="../../assets/images/authentication/flag.png" alt="flag"
+                                    class="img-fluid imgflag">
+                            </div>
+                            <span class="me-3"><i class="fa-solid fa-bell opacity-50"></i></span>
+                            <span class="me-3"><i class="fa-solid fa-envelope opacity-50"></i></span>
+                            <div>
+                                <img src="../../assets/images/authentication/Beared.png" alt="flag"
+                                    class="img-fluid imgflag">
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center flex-column ">
+
+                            <span>Austin Robertson</span>
+                            <span class="opacity-50">Marketing Administrator</span>
+
+                        </div>
+                    </div>
+
+
+                </div>
                 <!-- end header -->
 
                 <!-- headet text -->
@@ -117,61 +186,73 @@
                     <div class="row">
                         <div class="col-md-3 mb-4">
                             <div class="pricing-card p-3 text-center rounded-5 border">
-                                <div class="fs-5 fw-bold ">$0/mo</div>
+                                <div class="fs-5 fw-bold "><span class="fw-bolder fs-3">$0</span><span
+                                        class=" opacity-50">/mo</span>
+                                </div>
                                 <div class="fs-6 fw-bold m-3">Free</div>
-                                <ul class="pricing-features p-0">
+                                <ul class="pricing-features p-0 opacity-50">
                                     <li>10 users included</li>
                                     <li>2GB of storage</li>
                                     <li>Email support</li>
                                     <li>Help center access</li>
                                 </ul>
-                                <button class="btn btn-primary">Sign Up For Free</button>
+                                <button class="btn btn-primary btn-hover-orange w-75">Sign Up For Free</button>
                             </div>
                         </div>
                         <div class="col-md-3 mb-4">
                             <div class="pricing-card p-3 text-center rounded-5 border">
-                                <div class="fs-5 fw-bold">$15/mo</div>
+                                <div class="fs-5 fw-bold "><span class="fw-bolder fs-3">$15</span><span
+                                        class=" opacity-50">/mo</span>
+                                </div>
+
                                 <div class="fs-6 fw-bold m-3">Pro</div>
-                                <ul class="pricing-features p-0">
+                                <ul class="pricing-features p-0 opacity-50">
                                     <li>20 users included</li>
                                     <li>10GB of storage</li>
                                     <li>Priority Email support</li>
                                     <li>Help center access</li>
                                 </ul>
-                                <button class="btn btn-primary">Get Started</button>
+                                <button class="btn btn-primary btn-hover-orange w-75">Get Started</button>
                             </div>
                         </div>
                         <div class="col-md-3 mb-4">
                             <div class="pricing-card p-3 text-center rounded-5 border">
-                                <div class="fs-5 fw-bold">$29/mo</div>
+
+                                <div class="fs-5 fw-bold "><span class="fw-bolder fs-3">$29</span><span
+                                        class=" opacity-50">/mo</span>
+                                </div>
+
                                 <div class="fs-6 fw-bold m-3">Enterprise</div>
-                                <ul class="pricing-features p-0">
+                                <ul class="pricing-features p-0 opacity-50">
                                     <li>30 users included</li>
                                     <li>15GB of storage</li>
                                     <li>Call and email support</li>
                                     <li>Help center access</li>
                                 </ul>
-                                <button class="btn btn-primary">Get Started</button>
+                                <button class="btn btn-primary btn-hover-orange w-75">Get Started</button>
                             </div>
                         </div>
                         <div class="col-md-3 mb-4">
                             <div class="pricing-card p-3 text-center rounded-5 border">
-                                <div class="fs-5 fw-bold">$49/mo</div>
+                                <div class="fs-5 fw-bold "><span class="fw-bolder fs-3">$49</span><span
+                                        class=" opacity-50">/mo</span>
+                                </div>
+
                                 <div class="fs-6 fw-bold m-3">Premium</div>
-                                <ul class="pricing-features p-0">
+                                <ul class="pricing-features p-0 opacity-50">
                                     <li>50 users included</li>
                                     <li>60GB of storage</li>
                                     <li>24 x 7 call support</li>
                                     <li>Help center access</li>
                                 </ul>
-                                <button class="btn btn-primary">Get Started</button>
+                                <button class="btn btn-primary btn-hover-orange w-75">Get Started</button>
                             </div>
                         </div>
                     </div>
                     <!-- Features -->
                     <div class="row mb-3 border rounded-4 p-3">
                         <h3>Features</h3>
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 p-3">
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
@@ -184,40 +265,63 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Features 1</td>
+                                        <td class="opacity-50">Features 1</td>
                                         <td><i class="fas fa-check"></i></td>
                                         <td><i class="fas fa-check"></i></td>
                                         <td><i class="fas fa-check"></i></td>
                                         <td><i class="fas fa-check"></i></td>
+
+
                                     </tr>
                                     <tr>
-                                        <td>Features 2</td>
+                                        <td class="opacity-50">Features 2</td>
                                         <td><i class="fa fa-times" aria-hidden="true"></i></td>
                                         <td><i class="fas fa-check"></i></td>
                                         <td><i class="fas fa-check"></i></td>
                                         <td><i class="fas fa-check"></i></td>
                                     </tr>
                                     <tr>
-                                        <td>Features 3</td>
+                                        <td class="opacity-50">Features 3</td>
                                         <td><i class="fa fa-times" aria-hidden="true"></i></td>
                                         <td><i class="fas fa-check"></i></td>
                                         <td><i class="fas fa-check"></i></td>
                                         <td><i class="fas fa-check"></i></td>
                                     </tr>
                                     <tr>
-                                        <td>Features 4</td>
-                                        <td><i class="fas fa-check"></i></td>
-                                        <td><i class="fas fa-check"></i></td>
-                                        <td><i class="fas fa-check"></i></td>
-                                        <td><i class="fas fa-check"></i></td>
+                                        <td class="opacity-50 text-center align-middle ">Features 4</td>
+                                        <td class="text-center align-middle"><i class="fas fa-check"></i></td>
+                                        <td class="text-center align-middle"><i class="fas fa-check"></i></td>
+                                        <td class="text-center align-middle"><i class="fas fa-check"></i></td>
+                                        <td class="text-center align-middle"><i class="fas fa-check"></i></td>
                                     </tr>
                                     <tr>
-                                        <td>Features 5</td>
+                                        <td class="opacity-50">Features 5</td>
                                         <td><i class="fa fa-times" aria-hidden="true"></i></td>
                                         <td><i class="fa fa-times" aria-hidden="true"></i></td>
                                         <td><i class="fas fa-check"></i></td>
                                         <td><i class="fas fa-check"></i></td>
                                     </tr>
+
+                                    <tr>
+                                        <td class="text-center align-middle"></td>
+
+                                        <td class="text-center align-middle"><button
+                                                class="btn  bg-transparent  border border-2 text-primary">Free</button>
+                                        </td>
+
+                                        <td class="text-center align-middle"><button
+                                                class="btn  bg-transparent  border border-2 text-primary">Purchase</button>
+                                        </td >
+
+                                        <td class="text-center align-middle"><button
+                                                class="btn  bg-transparent  border border-2 text-primary">Purchase</button>
+                                        </td>
+
+                                        <td class="text-center align-middle"><button
+                                                class="btn  bg-transparent  border border-2 text-primary">Purchase</button>
+                                        </td>
+                                    </tr>
+
 
 
                                 </tbody>
@@ -284,7 +388,7 @@
                         <span class="fw-bold mb-2">Features</span>
                         <div class="col-lg-12">
                             <table class="table table-striped">
-                               
+
                                 <tbody>
                                     <tr>
                                         <td>Features 1</td>
@@ -335,7 +439,7 @@
                         <span class="fw-bold mb-2">Features</span>
                         <div class="col-lg-12">
                             <table class="table table-striped">
-                               
+
                                 <tbody>
                                     <tr>
                                         <td>Features 1</td>
@@ -488,8 +592,18 @@
                 <!--end Pricing -->
 
                 <!-- Footer -->
-                <footer class="p-2 w-100">
-                    <p>&copy; [2024] [Behnaz Haghighi]. All rights reserved.</p>
+                <footer class="p-2 ">
+
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                            <span class="me-3">Privacy Policy</span>
+                            <span>Terms of Use</span>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <p class="m-0">&copy; [2024] Hope UI, Made with ❤ by <a href="http://www.behnazhaghighi.ir/"
+                                    class="text-decoration-none">Behnaz Haghighi</a></p>
+                        </div>
+
                 </footer>
                 <!-- Footer -->
 
