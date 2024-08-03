@@ -136,7 +136,7 @@ body {
 }
 
 .bgclass {
-    background-color: lightgray;
+    background-color: #dee1e6;
 }
 
 /* end vectorMap page */
@@ -191,6 +191,20 @@ body {
     background-color: #ff6600 !important; /* رنگ نارنجی */
     border-color: #ff6600 !important; /* رنگ نارنجی */
   }
+  .btn-hover-blue:hover{
+    background-color: #c5ccf8 !important; 
+    border-color: #c5ccf8 !important; 
+    color: #37557b;
+  }
+  .bg-popular{
+    background-color:#D5EBDF;
+    color: #1AA053;
+  }
+  .bg-popularPro{
+    background-color:#c8ccfb;
+    color: #5261d4;
+  }
+
 /* timeline */
 .timeline {
     position: relative;
