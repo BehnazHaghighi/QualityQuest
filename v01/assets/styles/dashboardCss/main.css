@@ -25,6 +25,28 @@ body {
     font-size: 14px;
 }
 
+
+/* CSS to prevent horizontal scroll */
+body {
+    overflow-x: hidden;
+}
+
+.sidebar {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.vertical-menu {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 /* Error page  */
 .fontErr {
     font-size: 400px;
@@ -187,23 +209,29 @@ body {
     border: none;
     color: #000;
 }
+
 .btn-hover-orange:hover {
-    background-color: #ff6600 !important; /* رنگ نارنجی */
-    border-color: #ff6600 !important; /* رنگ نارنجی */
-  }
-  .btn-hover-blue:hover{
-    background-color: #c5ccf8 !important; 
-    border-color: #c5ccf8 !important; 
+    background-color: #ff6600 !important;
+    /* رنگ نارنجی */
+    border-color: #ff6600 !important;
+    /* رنگ نارنجی */
+}
+
+.btn-hover-blue:hover {
+    background-color: #c5ccf8 !important;
+    border-color: #c5ccf8 !important;
     color: #37557b;
-  }
-  .bg-popular{
-    background-color:#D5EBDF;
+}
+
+.bg-popular {
+    background-color: #D5EBDF;
     color: #1AA053;
-  }
-  .bg-popularPro{
-    background-color:#c8ccfb;
+}
+
+.bg-popularPro {
+    background-color: #c8ccfb;
     color: #5261d4;
-  }
+}
 
 /* timeline */
 .timeline {
@@ -399,3 +427,7 @@ body {
 }
 
 /* end spacialPages */
+/* Widget */
+
+
+/* end Widget */
