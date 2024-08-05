@@ -429,5 +429,19 @@ main {
 /* end spacialPages */
 /* Widget */
 
+.star-rating .fa-star {
+    font-size: 1em;
+    color: gray;
+}
+.star-rating .fa-star.checked {
+    color: gold;
+}
+.card-custom {
+    margin-bottom: 20px;
+  }
+.colorbtn{
+    background-color:#c13221 ;
+}
+
 
 /* end Widget */
