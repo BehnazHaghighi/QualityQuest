@@ -7,7 +7,7 @@ var lineChart = new Chart(ctx, {
         datasets: [{
             label: 'My First dataset',
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
+            borderColor: '#5765ec',            
             data: [0, 10, 5, 2, 20, 30, 45]
         }]
     },
@@ -43,7 +43,7 @@ var lineChart2 = new Chart(ctx, {
         datasets: [{
             label: 'My First dataset',
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
+            borderColor: '#f17d44',
             data: [0, 10, 5, 2, 20, 30, 45]
         }]
     },
@@ -79,7 +79,7 @@ var lineChart3 = new Chart(ctx, {
         datasets: [{
             label: 'My First dataset',
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
+            borderColor: '#43a670',
             data: [0, 10, 5, 2, 20, 30, 45]
         }]
     },
@@ -105,7 +105,7 @@ var lineChart3 = new Chart(ctx, {
 });
 
 
-// chart3 row1
+// chart4 row1
 
 var ctx = document.getElementById('lineChart4').getContext('2d');
 var lineChart4 = new Chart(ctx, {
@@ -115,7 +115,7 @@ var lineChart4 = new Chart(ctx, {
         datasets: [{
             label: 'My First dataset',
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
+            borderColor: '#43a670',
             data: [0, 10, 5, 2, 20, 30, 45]
         }]
     },
@@ -140,3 +140,144 @@ var lineChart4 = new Chart(ctx, {
     }
 });
 
+
+
+// chart5 row4
+
+var ctx = document.getElementById('lineChart6').getContext('2d');
+var lineChart4 = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: '#4d61d4',
+            data: [0, 10, 5]
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Month'
+                }
+            },
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Value'
+                }
+            }
+        }
+    }
+});
+
+// chart6 row4
+
+var ctx = document.getElementById('lineChart7').getContext('2d');
+var lineChart4 = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: '#d06054',
+            data: [0, 10, 5]
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Month'
+                }
+            },
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Value'
+                }
+            }
+        }
+    }
+});
+
+// chart7 row4
+
+var ctx = document.getElementById('lineChart5').getContext('2d');
+var lineChart4 = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: '#f59761',
+            data: [0, 10, 5]
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Month'
+                }
+            },
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Value'
+                }
+            }
+        }
+    }
+});
+
+// chart7 row4
+
+var ctx = document.getElementById('lineChart8').getContext('2d');
+var lineChart4 = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: '#5b9f62',
+            data: [0, 10, 5]
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Month'
+                }
+            },
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Value'
+                }
+            }
+        }
+    }
+});
