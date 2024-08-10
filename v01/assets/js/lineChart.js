@@ -283,3 +283,36 @@ var lineChart4 = new Chart(ctx, {
 });
 
 // chart9 row5
+
+var ctx = document.getElementById('lineChart9').getContext('2d');
+var lineChart4 = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March','April'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: '#5b9f62',
+            data: [0,13, 5,17]
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Month'
+                }
+            },
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Value'
+                }
+            }
+        }
+    }
+});
