@@ -445,3 +445,34 @@ main {
 
 
 /* end Widget */
+
+/* dashboard */
+.circleBlue {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #f0f0f0;
+    border: 3px solid #5a7ae1;
+    
+}
+.circlegreen {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #f0f0f0;
+    border: 3px solid #1ebfc7;
+    
+}
+.circleBlue img, .circlegreen img{
+    max-width: 50%; 
+    height: auto; 
+}
+/* end dashboard */
