@@ -112,9 +112,7 @@
                     </div>
 
                     <span class="fs-6 opacity-50 fw-bold mt-2">Elements</span>
-                    ادامه کد HTML:
 
-                    ```html
                     <div class="border-bottom">
                         <a href="#" class="list-group-item list-group-item-action opacity-50 border-0"><i
                                 class="fa-solid fa-moon m-2"></i>Components</a>
@@ -291,16 +289,102 @@
                 <!-- row2 -->
                 <div class="row mt-3">
                     <!-- Column 1: col-8 -->
-                    <div class="col-12 col-lg-8 mb-3">
-                        <div class="p-3 bg-primary text-white">
-                            This is the col-8 column. It takes up 8/12 of the row on large screens, and 100% on smaller screens.
+                    <div class="col-12 col-lg-8 mb-3 ">
+                        <div class="p-3  text-white border border-1 bg-light">
+
+                            <div class="d-flex flex-row justify-content-between align-items-center mb-3">
+                                <div>
+                                    <span class="fw-bolder text-black">$855.8K</span>
+                                    <span class="fw-bolder text-black opacity-25 d-block">Gross Sales</span>
+                                </div>
+                                <div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-light  dropdown-toggle" type="button" id="sortByDropdown"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            This Week
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="sortByDropdown">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fas fa-sort-alpha-down"></i> Name (A-Z)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fas fa-sort-alpha-up"></i> Name (Z-A)
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <canvas id="waveChart"></canvas>
                         </div>
+                        <div class="row mt-3">
+                            <!-- Donut Chart Container -->
+                            <div class="col-12 col-lg-4 p-3 mb-3  ">
+                                <div class="p-3  text-white border border-1 bg-light">
+                                    <div class="d-flex flex-row justify-content-between align-items-center mb-3">
+                                        <div>
+                                            <span class="fw-bolder text-black">Earnings</span>
+                                        </div>
+                                        <div>
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle" type="button"
+                                                    id="sortByDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    This Week
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="sortByDropdown">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-sort-alpha-down"></i> Name (A-Z)</a></li>
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-sort-alpha-up"></i> Name (Z-A)</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chart-container">
+                                        <canvas id="doughnutChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bar Chart Container -->
+                            <div class="col-12 col-lg-8 p-3 mb-3 ">
+                                <div class="p-3  text-white border border-1 bg-light">
+                                    <div class="d-flex flex-row justify-content-between align-items-center mb-3">
+                                        <div>
+                                            <span class="fw-bolder text-black">Conversions</span>
+                                        </div>
+                                        <div>
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle" type="button"
+                                                    id="sortByDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    This Week
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="sortByDropdown">
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-sort-alpha-down"></i> Name (A-Z)</a></li>
+                                                    <li><a class="dropdown-item" href="#"><i
+                                                                class="fas fa-sort-alpha-up"></i> Name (Z-A)</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chart-container">
+                                        <canvas id="barChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-        
+
                     <!-- Column 2: col-4 -->
                     <div class="col-12 col-lg-4">
                         <div class="p-3 bg-secondary text-white">
-                            This is the col-4 column. It takes up 4/12 of the row on large screens, and 100% on smaller screens.
+                            This is the col-4 column. It takes up 4/12 of the row on large screens, and 100% on smaller
+                            screens.
                         </div>
                     </div>
                 </div>
@@ -337,6 +421,11 @@
     <script src="../../assets/js/jquery-v3.7.1.js"></script>
     <!-- bootstrap script -->
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../assets/js/dashboardChart.js"></script>
+
+
 
 </body>
 
