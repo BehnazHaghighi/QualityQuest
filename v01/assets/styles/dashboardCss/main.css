@@ -433,57 +433,92 @@ main {
     font-size: 1em;
     color: gray;
 }
+
 .star-rating .fa-star.checked {
     color: gold;
 }
+
 .card-custom {
     margin-bottom: 20px;
-  }
-.colorbtn{
-    background-color:#c13221 ;
+}
+
+.colorbtn {
+    background-color: #c13221;
 }
 
 
 /* end Widget */
 
 /* dashboard */
+
+
 .circleBlue {
-    width: 60px; 
+    width: 60px;
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     background-color: #f0f0f0;
     border: 3px solid #5a7ae1;
-    
+
 }
+
 .circlegreen {
-    width: 60px; 
+    width: 60px;
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     background-color: #f0f0f0;
     border: 3px solid #1ebfc7;
-    
+
 }
-.circleBlue img, .circlegreen img{
-    max-width: 50%; 
-    height: auto; 
+
+.circleBlue img,
+.circlegreen img {
+    max-width: 50%;
+    height: auto;
 }
+
+@media (max-width: 576px) {
+    .circleBlue {
+        width: 50px;
+        height: 50px;
+    }
+
+    .circlegreen {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .circleBlue {
+        width: 55px;
+        height: 55px;
+    }
+
+    .circlegreen {
+        width: 55px;
+        height: 55px;
+    }
+}
+
 
 canvas {
     max-width: 100%;
     height: auto;
 }
+
 .chart-container {
     position: relative;
     width: 100%;
-    height: 400px; /* You can adjust the height as needed */
+    height: 400px;
+    /* You can adjust the height as needed */
 }
 
 
