@@ -521,5 +521,9 @@ canvas {
     /* You can adjust the height as needed */
 }
 
+.contactimg{
+    max-width: 50%;
+    height: auto;
+}
 
 /* end dashboard */
